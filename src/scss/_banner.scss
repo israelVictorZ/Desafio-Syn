@@ -1,0 +1,46 @@
+.bannerArea {
+    padding: 0 0 50px 100px;
+
+    @media #{$lg} {
+        padding: 0 100px 50px;
+    }
+
+    @media #{$md} {
+        padding: 0 50px 50px;
+    }
+
+    @media #{$sm} {
+        padding: 0 25px 50px;
+    }
+
+    .logo {
+        padding: 30px 0 35px;
+    }
+
+    .titleArea {
+        width: 800px;
+
+        @media (max-width: 1100px) {
+            width: 100%;
+        }
+    }
+
+    .imgBanner {
+        @media (min-width: 1400px) {
+            display: flex;
+            justify-content: center;
+        }
+
+        @media #{$lg} {
+            padding: 30px 30px 0 30px;
+        }
+
+        img {
+            width: 100%;
+
+            @media (min-width: 1400px) {
+                width: 70%;
+            }
+        }
+    }
+}

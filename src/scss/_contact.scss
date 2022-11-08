@@ -1,0 +1,243 @@
+.contactArea {
+    .bgPurple {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media #{$sm} {
+            padding: 50px 25px;
+        }
+    }
+
+    .bgOrange {
+        padding: 50px;
+
+        @media #{$sm} {
+            padding: 50px 25px;
+        }
+    }
+
+    .textArea {
+        text-align: center;
+        margin-bottom: 40px;
+
+        @media (min-width: 992px) {
+            padding: 0 100px;
+        }
+    }
+
+    .imgArea {
+        width: 100%;
+
+        @media (min-width: 1400px) {
+            display: flex;
+            justify-content: center;
+        }
+
+        @media #{$md} {
+            padding: 0 30px;
+        }
+
+        img {
+            width: 100%;
+
+            @media (min-width: 1400px) {
+                width: 85%;
+            }
+        }
+    }
+
+    form {
+        .formItem {
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+
+            .inputSubtitle {
+                color: $whiteColor;
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+
+            label {
+                font-size: 18px;
+                color: $whiteColor;
+            }
+
+            .option {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+
+                label {
+                    margin-left: 15px;
+                }
+            }
+
+            .counter {
+                display: flex;
+
+                div {
+                    height: 44px;
+                    background-color: $primaryColor;
+                    border: 0;
+                    outline: none;
+                    border-radius: 5px;
+                    width: 50px;
+                    transition: 0.3s;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    span {
+                        color: $whiteColor;
+                    }
+
+                    &:hover {
+                        background-color: #9c04ed;
+                    }
+
+                    &.disabled {
+                        background-color: #d0b7de;
+                        cursor: unset;
+                        pointer-events: none;
+                    }
+                }
+            }
+
+            .errorMessage {
+                position: absolute;
+                bottom: -30px;
+                left: 0;
+                color: #e01515;
+                font-size: 16px;
+            }
+
+            input {
+                border: 0;
+                background-color: $whiteColor;
+                padding: 15px;
+                border-radius: 5px;
+                outline: none;
+                color: #707070;
+
+                &[type="checkbox"] {
+                    position: relative;
+                    height: 22px;
+                    width: 30px;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: $whiteColor;
+                        border-radius: 5px;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%) scale(0);
+                        width: 100%;
+                        height: 75%;
+                        background-image: url(../../public/checked.png);
+                        background-position: bottom;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        opacity: 0;
+                        transition: 0.3s;
+                    }
+
+                    &:checked {
+                        &::after {
+                            transform: translate(-50%, -50%) scale(1);
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                &.employessNumber {
+                    padding: 10px;
+                    width: 80px;
+                    text-align: center;
+                    color: #707070;
+                    margin: 0 10px;
+
+                    &::-webkit-outer-spin-button,
+                    &::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                }
+
+                & ~ .errorMessage {
+                    position: absolute;
+                    bottom: -30px;
+                    left: 0;
+                    color: #e01515;
+                    font-size: 16px;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+
+                &.error ~ .errorMessage {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            &.sentInput {
+                input,
+                label {
+                    pointer-events: none;
+                    cursor: none;
+                }
+            }
+        }
+
+        .submit {
+            padding: 15px;
+            background-color: $primaryColor;
+            color: $whiteColor;
+            text-align: center;
+            width: 100%;
+            border: 0;
+            outline: none;
+            border-radius: 5px;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: #9c04ed;
+            }
+
+            &.disabled {
+                background-color: #d0b7de;
+                cursor: unset;
+                pointer-events: none;
+            }
+
+            &.successfulySent {
+                background-color: #dfdfdf;
+                color: #3ea90b;
+                cursor: unset;
+                pointer-events: none;
+            }
+
+            @media #{$md} {
+                margin: 0 auto;
+                display: block;
+                width: calc(100% - 40px);
+            }
+        }
+    }
+}

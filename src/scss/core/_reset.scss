@@ -1,0 +1,13 @@
+body {
+    font-family: $fontFamily;
+
+    section {
+        &.bgPurple, .bgPurple {
+            background-color: $primaryColor;
+        }
+
+        &.bgOrange, .bgOrange {
+            background-color: $secondaryColor;
+        }
+    }
+}

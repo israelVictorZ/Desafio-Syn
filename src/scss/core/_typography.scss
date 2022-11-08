@@ -1,0 +1,29 @@
+.titleArea {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 70px;
+        font-weight: $titleWeight;
+        color: $whiteColor;
+        margin-bottom: 20px;
+
+        @media #{$md} {
+            font-size: 35px;
+        }
+    }
+}
+
+.textArea {
+    p {
+        font-size: 25px;
+        font-weight: $textWeight;
+        color: $whiteColor;
+
+        @media #{$md} {
+            font-size: 20px;
+        }
+    }
+}

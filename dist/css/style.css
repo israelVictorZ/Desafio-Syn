@@ -1,0 +1,379 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+body section.bgPurple, body section .bgPurple {
+  background-color: #8701CF;
+}
+body section.bgOrange, body section .bgOrange {
+  background-color: #FF7B29;
+}
+
+.titleArea h1,
+.titleArea h2,
+.titleArea h3,
+.titleArea h4,
+.titleArea h5,
+.titleArea h6 {
+  font-size: 70px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .titleArea h1,
+.titleArea h2,
+.titleArea h3,
+.titleArea h4,
+.titleArea h5,
+.titleArea h6 {
+    font-size: 35px;
+  }
+}
+
+.textArea p {
+  font-size: 25px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .textArea p {
+    font-size: 20px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.bannerArea {
+  padding: 0 0 50px 100px;
+}
+@media (max-width: 992px) {
+  .bannerArea {
+    padding: 0 100px 50px;
+  }
+}
+@media (max-width: 767px) {
+  .bannerArea {
+    padding: 0 50px 50px;
+  }
+}
+@media (max-width: 600px) {
+  .bannerArea {
+    padding: 0 25px 50px;
+  }
+}
+.bannerArea .logo {
+  padding: 30px 0 35px;
+}
+.bannerArea .titleArea {
+  width: 800px;
+}
+@media (max-width: 1100px) {
+  .bannerArea .titleArea {
+    width: 100%;
+  }
+}
+@media (min-width: 1400px) {
+  .bannerArea .imgBanner {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  .bannerArea .imgBanner {
+    padding: 30px 30px 0 30px;
+  }
+}
+.bannerArea .imgBanner img {
+  width: 100%;
+}
+@media (min-width: 1400px) {
+  .bannerArea .imgBanner img {
+    width: 70%;
+  }
+}
+
+.aboutArea {
+  padding: 50px 0 20px 100px;
+}
+@media (max-width: 992px) {
+  .aboutArea {
+    padding: 50px 100px;
+  }
+}
+@media (max-width: 767px) {
+  .aboutArea {
+    padding: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .aboutArea {
+    padding: 50px 25px;
+  }
+}
+.aboutArea .titleArea h1 {
+  width: 1000px;
+}
+@media (max-width: 1100px) {
+  .aboutArea .titleArea h1 {
+    width: 100%;
+  }
+}
+.aboutArea .imgArea img {
+  margin-top: 90px;
+  margin-left: -38px;
+  width: calc(100% + 50px);
+}
+@media (min-width: 1400px) {
+  .aboutArea .imgArea img {
+    margin-top: 0;
+  }
+}
+@media (max-width: 992px) {
+  .aboutArea .imgArea img {
+    margin-top: 35px;
+    margin-left: 112px;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .aboutArea .imgArea img {
+    margin-left: 62px;
+  }
+}
+@media (max-width: 600px) {
+  .aboutArea .imgArea img {
+    margin-left: 37px;
+  }
+}
+
+.contactArea .bgPurple {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .contactArea .bgPurple {
+    padding: 50px 25px;
+  }
+}
+.contactArea .bgOrange {
+  padding: 50px;
+}
+@media (max-width: 600px) {
+  .contactArea .bgOrange {
+    padding: 50px 25px;
+  }
+}
+.contactArea .textArea {
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .contactArea .textArea {
+    padding: 0 100px;
+  }
+}
+.contactArea .imgArea {
+  width: 100%;
+}
+@media (min-width: 1400px) {
+  .contactArea .imgArea {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .contactArea .imgArea {
+    padding: 0 30px;
+  }
+}
+.contactArea .imgArea img {
+  width: 100%;
+}
+@media (min-width: 1400px) {
+  .contactArea .imgArea img {
+    width: 85%;
+  }
+}
+.contactArea form .formItem {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.contactArea form .formItem .inputSubtitle {
+  color: #FFFFFF;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.contactArea form .formItem label {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.contactArea form .formItem .option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.contactArea form .formItem .option label {
+  margin-left: 15px;
+}
+.contactArea form .formItem .counter {
+  display: flex;
+}
+.contactArea form .formItem .counter div {
+  height: 44px;
+  background-color: #8701CF;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  width: 50px;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.contactArea form .formItem .counter div span {
+  color: #FFFFFF;
+}
+.contactArea form .formItem .counter div:hover {
+  background-color: #9c04ed;
+}
+.contactArea form .formItem .counter div.disabled {
+  background-color: #d0b7de;
+  cursor: unset;
+  pointer-events: none;
+}
+.contactArea form .formItem .errorMessage {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  color: #e01515;
+  font-size: 16px;
+}
+.contactArea form .formItem input {
+  border: 0;
+  background-color: #FFFFFF;
+  padding: 15px;
+  border-radius: 5px;
+  outline: none;
+  color: #707070;
+}
+.contactArea form .formItem input[type=checkbox] {
+  position: relative;
+  height: 22px;
+  width: 30px;
+}
+.contactArea form .formItem input[type=checkbox]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+.contactArea form .formItem input[type=checkbox]::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+  height: 75%;
+  background-image: url(../../public/checked.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  transition: 0.3s;
+}
+.contactArea form .formItem input[type=checkbox]:checked::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+.contactArea form .formItem input.employessNumber {
+  padding: 10px;
+  width: 80px;
+  text-align: center;
+  color: #707070;
+  margin: 0 10px;
+}
+.contactArea form .formItem input.employessNumber::-webkit-outer-spin-button, .contactArea form .formItem input.employessNumber::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.contactArea form .formItem input ~ .errorMessage {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  color: #e01515;
+  font-size: 16px;
+  opacity: 0;
+  visibility: hidden;
+}
+.contactArea form .formItem input.error ~ .errorMessage {
+  opacity: 1;
+  visibility: visible;
+}
+.contactArea form .formItem.sentInput input,
+.contactArea form .formItem.sentInput label {
+  pointer-events: none;
+  cursor: none;
+}
+.contactArea form .submit {
+  padding: 15px;
+  background-color: #8701CF;
+  color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.contactArea form .submit:hover {
+  background-color: #9c04ed;
+}
+.contactArea form .submit.disabled {
+  background-color: #d0b7de;
+  cursor: unset;
+  pointer-events: none;
+}
+.contactArea form .submit.successfulySent {
+  background-color: #dfdfdf;
+  color: #3ea90b;
+  cursor: unset;
+  pointer-events: none;
+}
+@media (max-width: 767px) {
+  .contactArea form .submit {
+    margin: 0 auto;
+    display: block;
+    width: calc(100% - 40px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

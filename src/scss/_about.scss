@@ -1,0 +1,51 @@
+.aboutArea {
+    padding: 50px 0 20px 100px;
+
+    @media #{$lg} {
+        padding: 50px 100px;
+    }
+
+    @media #{$md} {
+        padding: 50px;
+    }
+
+    @media #{$sm} {
+        padding: 50px 25px;
+    }
+
+    .titleArea {
+        h1 {
+            width: 1000px;
+
+            @media (max-width: 1100px) {
+                width: 100%;
+            }
+        }
+    }
+
+    .imgArea {
+        img {
+            margin-top: 90px;
+            margin-left: -38px;
+            width: calc(100% + 50px);
+
+            @media (min-width: 1400px) {
+                margin-top: 0;
+            }
+
+            @media #{$lg} {
+                margin-top: 35px;
+                margin-left: 112px;
+                width: 100%;
+            }
+
+            @media #{$md} {
+                margin-left: 62px;
+            }
+
+            @media #{$sm} {
+                margin-left: 37px;
+            }
+        }
+    }
+}
